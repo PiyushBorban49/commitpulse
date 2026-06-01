@@ -59,8 +59,8 @@ export default function Achievements({ achievements }: { achievements: Achieveme
               <div className="mt-2 w-full">
                 <div className="w-full h-1 rounded-full bg-[rgba(255,255,255,0.08)] overflow-hidden">
                   <div
-                    className="h-full rounded-full bg-[#A1A1AA]/40 transition-all duration-500"
-                    style={{ width: `${achievement.progress}%` }}
+                    className="h-full rounded-full bg-[#A1A1AA]/40 transition-all duration-500 w-[var(--progress)]"
+                    style={{ '--progress': `${achievement.progress}%` } as React.CSSProperties}
                   />
                 </div>
                 <p className="text-[10px] text-[#777] mt-1">
